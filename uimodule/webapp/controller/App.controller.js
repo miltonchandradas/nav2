@@ -15,7 +15,9 @@ sap.ui.define([
 
 			// Store the models
 			this.setModel(viewModel, "viewModel");
-			this._viewModel = this.getModel("viewModel");
+      this._viewModel = this.getModel("viewModel");
+
+      this._viewModel.setProperty("/fromApp1", this.getOwnerComponent().getFromApp1());
     },
 
     onNav: function () {
