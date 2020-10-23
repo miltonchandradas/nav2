@@ -1,0 +1,18 @@
+ <mvc:View controllerName="com.sap.nav2.controller.App"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc">
+  <App id="idAppControl" >
+    <pages>
+      <Page title="{i18n>title}">
+        <content>
+
+          <Button text="Navigate to App 1" press=".onNav">
+          </Button>
+          <Label  text="Only see this if you come from App1" visible="{viewModel>/fromApp1}"></Label>
+
+        </content>
+      </Page>
+    </pages>
+  </App>
+</mvc:View>
